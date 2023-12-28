@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  
+}
+
+section{
+  min-height: 100vh;
+  background: #000;
+}
+.content_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+.content{
+  margin: 0px 100px;
+}
+.skyblue_bg{
+  background: skyblue;
+}
+
+.content > * {
+  color: hsl(0 0% 100% / 0.2);
+  background-clip: text;
+  background-image: linear-gradient(90deg, red, blue);
+
+}
+
+
+
+
+
+
