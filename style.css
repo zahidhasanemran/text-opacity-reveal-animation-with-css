@@ -19,17 +19,38 @@ section{
   
 }
 .content{
-  margin: 0px 100px;
+  margin: 0px 30%;
+  text-align: center;
+}
+.content h2{
+  margin-bottom: 30px;
 }
 .skyblue_bg{
   background: skyblue;
 }
 
-.content > * {
+.content span {
   color: hsl(0 0% 100% / 0.2);
   background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
   background-image: linear-gradient(90deg, red, blue);
+  animation: opacity-revealed linear forwards;
+  
+  animation-timeline: view();
+}
 
+.content h2 span{
+  animation-range-start: cover 20vh;
+  animation-range-end: cover 30vh;
+}
+.content p span{
+  animation-range-start: cover 20vh;
+  animation-range-end: cover 30vh;
+}
+
+@keyframes opacity-revealed {
+  to{background-size: 100% 100%;}
 }
 
 
